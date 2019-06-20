@@ -3,10 +3,12 @@
     <h2 class="section-title">Cast</h2>
     <div class="movieCast grid">
       <div v-for="person in movieCast" :key="person.id" class="person">
-        <img :src="'https://image.tmdb.org/t/p/w200' + person.profile_path" :alt="person.name">
-        <p class="actor">{{ person.name }}</p>
-        <hr>
-        <p>{{person.character}}</p>
+        <router-link :to="'/person/' + person.id">
+          <img :src="'https://image.tmdb.org/t/p/w200' + person.profile_path" :alt="person.name">
+          <p class="actor">{{ person.name }}</p>
+          <hr>
+          <p>{{person.character}}</p>
+        </router-link>
       </div>
     </div>
   </div>
@@ -47,6 +49,10 @@ export default {
 .movieCast .person {
   width: 15.2%;
   margin: 10px;
+
+  a {
+    color: #212121;
+  }
 
   hr {
     margin: 10px 0;

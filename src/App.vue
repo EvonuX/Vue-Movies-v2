@@ -84,5 +84,10 @@ hr {
   text-transform: uppercase;
   color: #00d373;
   font-weight: bold;
+
+  &--regular {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
 </style>

@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss">
 .card {
-  width: 22%;
+  width: 22.8%;
   margin: 15px;
   transition: all 0.5s;
 
