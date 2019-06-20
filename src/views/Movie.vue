@@ -3,13 +3,13 @@
     <div class="movie">
       <img
         class="movieImg"
-        :src="'https://image.tmdb.org/t/p/original' + movie.backdrop_path"
+        v-lazy="'https://image.tmdb.org/t/p/original' + movie.backdrop_path"
         :alt="movie.title"
       >
       <div class="movieMeta container">
         <img
           class="regImg"
-          :src="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+          v-lazy="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
           :alt="movie.title"
         >
         <div class="movieInfo">

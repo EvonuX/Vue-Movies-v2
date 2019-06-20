@@ -4,7 +4,7 @@
     <div class="movieCast grid">
       <div v-for="person in movieCast" :key="person.id" class="person">
         <router-link :to="'/person/' + person.id">
-          <img :src="'https://image.tmdb.org/t/p/w200' + person.profile_path" :alt="person.name">
+          <img v-lazy="'https://image.tmdb.org/t/p/w200' + person.profile_path" :alt="person.name">
           <p class="actor">{{ person.name }}</p>
           <hr>
           <p>{{person.character}}</p>

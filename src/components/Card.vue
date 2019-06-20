@@ -2,7 +2,7 @@
   <div class="grid">
     <div class="card" v-for="movie in movies" :key="movie.id">
       <router-link :to="'/movie/' + movie.id">
-        <img :src="'https://image.tmdb.org/t/p/w500' + movie.poster_path" :alt="movie.title">
+        <img v-lazy="'https://image.tmdb.org/t/p/w500' + movie.poster_path" :alt="movie.title">
         <h4>{{ movie.title }}</h4>
       </router-link>
     </div>

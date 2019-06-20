@@ -3,7 +3,7 @@
     <div class="person">
       <img
         class="regImg"
-        :src="'https://image.tmdb.org/t/p/w400' + person.profile_path"
+        v-lazy="'https://image.tmdb.org/t/p/w400' + person.profile_path"
         :alt="person.name"
       >
       <div class="personBio">
