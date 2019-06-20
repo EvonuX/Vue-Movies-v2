@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Upcoming from './views/Upcoming.vue'
 import Popular from './views/Popular.vue'
+import Movie from './views/Movie.vue'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/popular',
       name: 'Popular',
       component: Popular
+    },
+    {
+      path: '/movie/:id',
+      name: 'Movie',
+      component: Movie
     }
   ]
 })

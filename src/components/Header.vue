@@ -2,7 +2,7 @@
   <header>
     <div class="logo">
       <router-link to="/">
-        <img src="@/assets/logo.png" class="logoImg" width="50px">
+        <img src="@/assets/logo.png" class="regImg" width="50px">
         <span>VueMovies</span>
       </router-link>
     </div>

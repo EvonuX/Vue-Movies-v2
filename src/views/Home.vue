@@ -27,7 +27,6 @@ export default {
         `https://api.themoviedb.org/3/movie/now_playing?api_key=9b6598c5f631237fa93584a37f08c691&language=en-US&page=1`
       )
       .then(res => {
-        console.log(res.data.results);
         this.nowPlaying = res.data.results;
       });
   }

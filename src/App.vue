@@ -35,7 +35,7 @@ a {
   text-decoration: none;
 }
 
-img:not(.logoImg, .poweredLogo) {
+img:not(.regImg) {
   width: 100%;
 }
 
@@ -49,10 +49,15 @@ img:not(.logoImg, .poweredLogo) {
   margin: 0 auto;
 }
 
+hr {
+  border-color: #00d373;
+  margin: 15px 0;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .section-title {
@@ -73,5 +78,11 @@ img:not(.logoImg, .poweredLogo) {
     top: 130%;
     transform: translateX(-50%);
   }
+}
+
+.title {
+  text-transform: uppercase;
+  color: #00d373;
+  font-weight: bold;
 }
 </style>
