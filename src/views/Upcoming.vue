@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
-    <div class="latest container">
-      <h1 class="section-title">See What's Playing Now</h1>
-      <Card :movies="nowPlaying"/>
+  <div class="upcoming">
+    <div class="container">
+      <h1 class="section-title">Here are the upcoming movies</h1>
+      <Card :movies="upcoming"/>
     </div>
   </div>
 </template>
@@ -18,17 +18,17 @@ export default {
   },
   data() {
     return {
-      nowPlaying: []
+      upcoming: []
     };
   },
   created() {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/now_playing?api_key=9b6598c5f631237fa93584a37f08c691&language=en-US&page=1`
+        `https://api.themoviedb.org/3/movie/upcoming?api_key=9b6598c5f631237fa93584a37f08c691&language=en-US&page=1`
       )
       .then(res => {
         console.log(res.data.results);
-        this.nowPlaying = res.data.results;
+        this.upcoming = res.data.results;
       });
   }
 };

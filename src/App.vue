@@ -4,7 +4,7 @@
     <main>
       <router-view/>
     </main>
-    <Footer/>
+    <Footer v-cloak/>
   </div>
 </template>
 
@@ -39,6 +39,11 @@ img:not(.logoImg, .poweredLogo) {
   width: 100%;
 }
 
+.hidden,
+[v-cloak] {
+  display: none !important;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -55,6 +60,7 @@ img:not(.logoImg, .poweredLogo) {
   text-align: center;
   margin: 35px 0 50px;
   position: relative;
+  text-transform: capitalize;
 
   &:after {
     content: "";
