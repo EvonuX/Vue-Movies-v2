@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Upcoming from './views/Upcoming.vue'
 import Popular from './views/Popular.vue'
+import SearchResults from './views/SearchResults.vue'
 import Movie from './views/Movie.vue'
 import Person from './views/Person.vue'
 
@@ -26,6 +27,11 @@ export default new Router({
       path: '/popular',
       name: 'Popular',
       component: Popular
+    },
+    {
+      path: '/search',
+      name: 'SearchResults',
+      component: SearchResults
     },
     {
       path: '/movie/:id',
