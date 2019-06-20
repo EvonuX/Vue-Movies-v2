@@ -5,6 +5,9 @@
       <router-view/>
     </main>
     <Footer v-cloak/>
+    <back-to-top bottom="50px" right="50px">
+      <button type="button" class="btn-to-top">&rsaquo;</button>
+    </back-to-top>
   </div>
 </template>
 
@@ -57,7 +60,6 @@ hr {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
 }
 
 .section-title {
@@ -89,5 +91,19 @@ hr {
     font-weight: bold;
     text-transform: uppercase;
   }
+}
+
+.btn-to-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 30px;
+  line-height: 0;
+  background-color: #212121;
+  color: #fff;
+  transform: rotate(-90deg);
+  padding-bottom: 7px;
+  cursor: pointer;
 }
 </style>
