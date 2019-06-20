@@ -24,7 +24,7 @@
           </p>
           <p>
             <span class="title">Release Date:</span>
-            {{ movie.release_date }}
+            {{ movie.release_date | moment("Do MMM YYYY") }}
           </p>
           <p>
             <span class="title">Rating:</span>

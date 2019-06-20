@@ -13,11 +13,11 @@
         <hr v-if="person.biography">
         <p v-if="person.birthday">
           <span class="title--regular">Born on:</span>
-          {{ person.birthday }} in {{ person.place_of_birth }}
+          {{ person.birthday | moment("Do MMM YYYY") }} in {{ person.place_of_birth }}
         </p>
         <p v-if="person.deathday">
           <span class="title--regular">Died on:</span>
-          {{ person.deathday }}
+          {{ person.deathday | moment("Do MMM YYYY") }}
         </p>
       </div>
     </div>
