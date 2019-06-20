@@ -25,6 +25,7 @@ export default {
 
 <style lang="scss">
 footer {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;

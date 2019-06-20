@@ -13,7 +13,7 @@
           :alt="movie.title"
         >
         <div class="movieInfo">
-          <h1>{{ movie.title }}</h1>
+          <h1 class="primary-title">{{ movie.title }}</h1>
           <h2>{{ movie.tagline }}</h2>
           <hr>
           <h4>{{ movie.overview }}</h4>

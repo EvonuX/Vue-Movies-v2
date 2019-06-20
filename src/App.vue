@@ -82,6 +82,11 @@ hr {
   }
 }
 
+.primary-title {
+  text-transform: uppercase;
+  color: #00d373;
+}
+
 .title {
   text-transform: uppercase;
   color: #00d373;

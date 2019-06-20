@@ -8,7 +8,7 @@
     </div>
     <form @submit.prevent="search">
       <input type="text" v-model="searchTerm" placeholder="Search for movies...">
-      <button>Search</button>
+      <button :disabled="this.searchTerm.length < 1">Search</button>
     </form>
     <nav>
       <ul>
