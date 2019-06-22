@@ -77,6 +77,19 @@ hr {
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 20px;
+
+  @media screen and (max-width: 1400px) {
+    grid-column-gap: 20px;
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 500) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .personGrid {

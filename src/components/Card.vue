@@ -30,6 +30,14 @@ export default {
   img {
     height: 480px;
     object-fit: cover;
+
+    @media screen and (max-width: 780px) {
+      height: 335px;
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 265px;
+    }
   }
 
   a {
