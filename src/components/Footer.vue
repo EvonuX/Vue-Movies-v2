@@ -33,6 +33,10 @@ footer {
   background-color: #212121;
   color: #fff;
 
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+
   a {
     color: #fff;
   }

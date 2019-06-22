@@ -52,6 +52,10 @@ header {
   background-color: #212121;
   padding: 15px 30px;
 
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+
   .logo a {
     display: flex;
     align-items: center;
@@ -65,6 +69,10 @@ header {
 
   form {
     margin-left: 50px;
+
+    @media screen and (max-width: 480px) {
+      margin: 10px 0;
+    }
 
     input {
       padding: 10px;

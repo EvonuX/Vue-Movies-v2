@@ -87,7 +87,7 @@ hr {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media screen and (max-width: 500) {
+  @media screen and (max-width: 500px) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
