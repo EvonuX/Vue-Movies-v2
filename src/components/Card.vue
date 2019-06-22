@@ -30,6 +30,7 @@ export default {
   img {
     height: 480px;
     object-fit: cover;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
 
     @media screen and (max-width: 780px) {
       height: 335px;

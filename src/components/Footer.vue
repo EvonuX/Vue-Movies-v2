@@ -4,7 +4,7 @@
     <div class="poweredBy">
       <a href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">
         Powered by
-        <img src="@/assets/moviedbLogo.png" width="50px" class="regImg">
+        <img src="@/assets/moviedbLogo.png" width="50px" class="regImg" alt="movie db logo">
       </a>
     </div>
     <div class="github">

@@ -2,12 +2,12 @@
   <header>
     <div class="logo">
       <router-link to="/">
-        <img src="@/assets/logo.png" class="regImg" width="50px">
+        <img src="@/assets/logo.png" class="regImg" alt="vue logo" width="50px">
         <span>VueMovies</span>
       </router-link>
     </div>
     <form @submit.prevent="search">
-      <input type="text" v-model="searchTerm" placeholder="Search for movies...">
+      <input type="text" name="search" v-model="searchTerm" placeholder="Search for movies...">
       <button :disabled="this.searchTerm.length < 1">Search</button>
     </form>
     <nav>

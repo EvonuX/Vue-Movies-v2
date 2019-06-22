@@ -69,6 +69,8 @@ export default {
     filter: none;
     height: 315px;
     object-fit: cover;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+
     @media screen and (max-width: 1100px) {
       height: auto;
     }
