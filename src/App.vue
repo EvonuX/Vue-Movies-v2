@@ -27,6 +27,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.8s;
@@ -38,13 +40,12 @@ export default {
 .fade-leave-active {
   opacity: 0;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
 }
 
 a {

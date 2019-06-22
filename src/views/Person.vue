@@ -65,8 +65,25 @@ export default {
   align-items: center;
   margin: 50px auto;
 
+  @media screen and (max-width: 1500px) {
+    padding: 0 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
   .personBio {
     margin-left: 50px;
+
+    h4 {
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 25px 0;
+    }
   }
 }
 </style>
