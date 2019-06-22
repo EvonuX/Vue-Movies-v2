@@ -10,6 +10,13 @@ import Person from './views/Person.vue'
 Vue.use(Router)
 
 export default new Router({
+  scrollBehavior() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ x: 0, y: 0 })
+      }, 800)
+    })
+  },
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [

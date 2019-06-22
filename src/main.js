@@ -14,7 +14,7 @@ Vue.use(VueLazyload, {
   preLoad: 1,
   error: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy67qKEMJNh_JsKfsEY3BTVbfSzvXi9F0QzwgKxC9fxTzYBEIb',
   loading: 'https://cdn.dribbble.com/users/194846/screenshots/1452453/loadingspinner.gif',
-  attempt: 1
+  attempt: 2
 })
 
 new Vue({
