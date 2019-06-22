@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5;
+}
+
 img:not(.regImg) {
   width: 100%;
 }

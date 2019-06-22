@@ -11,8 +11,5 @@ export default new Vuex.Store({
     searchMovie(state, payload) {
       state.searchTerm = payload
     }
-  },
-  actions: {
-
   }
 })

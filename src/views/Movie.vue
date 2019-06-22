@@ -70,7 +70,6 @@ export default {
           }?api_key=9b6598c5f631237fa93584a37f08c691&language=en-US`
         )
         .then(res => {
-          // console.log(res.data);
           this.movie = res.data;
         })
         .catch(err => console.error(err));
@@ -131,6 +130,11 @@ export default {
 
         @media screen and (max-width: 768px) {
           margin: 0;
+        }
+
+        h4 {
+          font-weight: 400;
+          line-height: 1.5;
         }
 
         .genres p {
