@@ -106,12 +106,32 @@ export default {
       display: flex;
       align-items: center;
 
+      @media screen and (max-width: 1600px) {
+        padding: 0 30px;
+      }
+
       img {
         filter: none;
+
+        @media screen and (max-width: 1600px) {
+          width: 25%;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 40%;
+        }
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
 
       .movieInfo {
         margin-left: 50px;
+
+        @media screen and (max-width: 768px) {
+          margin: 0;
+        }
 
         .genres p {
           display: inline-block;
