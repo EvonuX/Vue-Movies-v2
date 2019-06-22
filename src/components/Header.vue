@@ -50,7 +50,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #212121;
-  padding: 15px;
+  padding: 15px 30px;
 
   .logo a {
     display: flex;
@@ -64,6 +64,8 @@ header {
   }
 
   form {
+    margin-left: 50px;
+
     input {
       padding: 10px;
       border: 0;

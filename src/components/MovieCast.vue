@@ -1,7 +1,7 @@
 <template>
   <div class="movieCastWrapper">
     <h2 class="section-title">Cast</h2>
-    <div class="movieCast grid">
+    <div class="movieCast personGrid">
       <div v-for="person in movieCast" :key="person.id" class="person">
         <router-link :to="'/person/' + person.id">
           <img v-lazy="'https://image.tmdb.org/t/p/w200' + person.profile_path" :alt="person.name">
@@ -47,7 +47,8 @@ export default {
 
 <style lang="scss">
 .movieCast .person {
-  width: 15.2%;
+  // width: 15.2%;
+  width: 100%;
   margin: 10px;
 
   a {

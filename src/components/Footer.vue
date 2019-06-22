@@ -29,7 +29,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 30px;
   background-color: #212121;
   color: #fff;
 

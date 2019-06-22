@@ -1,9 +1,7 @@
 <template>
   <div class="starredIn">
     <h3 class="section-title">Starred In</h3>
-    <div class="grid">
-      <Card :movies="movies"/>
-    </div>
+    <Card :movies="movies"/>
   </div>
 </template>
 

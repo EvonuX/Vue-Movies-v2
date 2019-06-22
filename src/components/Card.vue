@@ -18,8 +18,9 @@ export default {
 
 <style lang="scss">
 .card {
-  width: 22.8%;
-  margin: 15px;
+  // width: 22.8%;
+  // margin: 15px;
+  width: 100%;
   transition: all 0.5s;
 
   &:hover {
@@ -27,7 +28,7 @@ export default {
   }
 
   img {
-    height: 430px;
+    height: 480px;
     object-fit: cover;
   }
 
