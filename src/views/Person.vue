@@ -73,11 +73,17 @@ export default {
     flex-direction: column;
   }
 
+  @media screen and (max-width: 500px) {
+    img {
+      width: 100%;
+    }
+  }
+
   .personBio {
     margin-left: 50px;
 
     h4 {
-      font-weight: 500;
+      font-weight: 400;
       line-height: 1.5;
     }
 

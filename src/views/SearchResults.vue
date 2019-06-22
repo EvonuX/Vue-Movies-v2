@@ -2,9 +2,7 @@
   <div class="searchResults container">
     <h1 v-if="this.results.length > 1" class="section-title">Search results for "{{ search }}"</h1>
     <h1 v-else class="section-title">Sorry, no movies found with "{{ search }}"</h1>
-    <div class="grid">
-      <Card :movies="results"/>
-    </div>
+    <Card :movies="results"/>
   </div>
 </template>
 
