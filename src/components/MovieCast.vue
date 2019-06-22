@@ -48,8 +48,8 @@ export default {
 <style lang="scss">
 .movieCast .person {
   // width: 15.2%;
+  // margin: 10px;
   width: 100%;
-  margin: 10px;
 
   a {
     color: #212121;
@@ -69,6 +69,9 @@ export default {
     filter: none;
     height: 315px;
     object-fit: cover;
+    @media screen and (max-width: 1100px) {
+      height: auto;
+    }
   }
 }
 </style>

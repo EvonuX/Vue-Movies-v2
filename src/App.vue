@@ -96,6 +96,18 @@ hr {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 30px;
+
+  @media screen and (max-width: 1600px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .section-title {
